@@ -1,0 +1,55 @@
+<!-- dialog_edit_review.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white"
+    android:elevation="6dp"
+    android:layout_margin="16dp"
+    android:clipToOutline="true">
+
+    <EditText
+        android:id="@+id/etEditRestaurantName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Restaurant Name"
+        android:backgroundTint="@color/maroon"
+        android:padding="12dp"
+        android:textColor="@color/maroon"
+        android:textColorHint="@color/maroon_light"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/etEditReviewText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Review Text"
+        android:backgroundTint="@color/maroon"
+        android:padding="12dp"
+        android:textColor="@color/maroon"
+        android:textColorHint="@color/maroon_light"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBarEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1"
+        android:layout_gravity="center"
+        android:progressTint="@color/maroon"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnApplyChanges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apply Changes"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:padding="12dp" />
+</LinearLayout>

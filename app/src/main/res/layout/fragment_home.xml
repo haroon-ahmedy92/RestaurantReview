@@ -1,14 +1,78 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<!-- fragment_home.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/white">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <!-- Restaurant Name Input -->
+    <EditText
+        android:id="@+id/etRestaurantName"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_home_fragment" />
+        android:layout_height="wrap_content"
+        android:hint="Restaurant Name"
+        android:textColorHint="@color/maroon"
+        android:textColor="@color/maroon"
+        android:backgroundTint="@color/maroon"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:drawableStart="@drawable/ic_restaurant"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/maroon" />
 
-</FrameLayout>
+    <!-- Review Text Input -->
+    <EditText
+        android:id="@+id/etReviewText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Review Text"
+        android:textColorHint="@color/maroon"
+        android:textColor="@color/maroon"
+        android:backgroundTint="@color/maroon"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:drawableStart="@drawable/ic_edit"
+    android:drawablePadding="8dp"
+    android:drawableTint="@color/maroon" />
+
+    <!-- Rating Bar -->
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1"
+        android:progressTint="@color/maroon"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Submit Review Button -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Review"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/maroon"
+        android:padding="16dp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="16dp"
+        android:drawableStart="@drawable/ic_send"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/white" />
+
+    <!-- Mark as Favorite Button -->
+    <Button
+        android:id="@+id/btnMarkFavorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mark as Favorite"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/maroon"
+        android:padding="16dp"
+        android:textAllCaps="false"
+        android:drawableStart="@drawable/ic_favorite"
+    android:drawablePadding="8dp"
+    android:drawableTint="@color/white" />
+</LinearLayout>
