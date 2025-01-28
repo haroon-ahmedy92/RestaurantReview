@@ -6,24 +6,34 @@
     android:padding="16dp"
     android:background="@color/white"
     android:layout_marginBottom="8dp"
-    android:elevation="4dp">
+    android:elevation="4dp"
+    android:backgroundTint="@color/white">
 
+    <!-- Restaurant Name -->
     <TextView
         android:id="@+id/tvRestaurantName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:textColor="@color/maroon" />
+        android:textColor="@color/maroon"
+        android:drawableStart="@drawable/ic_restaurant"
+    android:drawablePadding="8dp"
+    android:drawableTint="@color/maroon" />
 
+    <!-- Review Text -->
     <TextView
         android:id="@+id/tvReviewText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:textColor="@color/maroon_light"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:drawableStart="@drawable/ic_edit"
+    android:drawablePadding="8dp"
+    android:drawableTint="@color/maroon_light" />
 
+    <!-- Rating -->
     <TextView
         android:id="@+id/tvRating"
         android:layout_width="match_parent"
@@ -34,13 +44,14 @@
         android:text="⭐ Rating: 5/5"
         android:drawablePadding="4dp" />
 
-
+    <!-- Edit and Delete Buttons -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="12dp">
 
+        <!-- Edit Button -->
         <Button
             android:id="@+id/btnEdit"
             android:layout_width="0dp"
@@ -49,15 +60,22 @@
             android:text="Edit"
             android:background="@drawable/rounded_button"
             android:textColor="@color/white"
-            android:layout_marginEnd="8dp" />
+            android:layout_marginEnd="8dp"
+            android:drawableStart="@drawable/ic_edit"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/white" />
 
+        <!-- Delete Button -->
         <Button
             android:id="@+id/btnDelete"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Delete"
             android:background="@drawable/rounded_button"
+            android:drawableStart="@drawable/ic_delete"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/white"
+            android:text="Delete"
             android:textColor="@color/white" />
     </LinearLayout>
 </LinearLayout>
